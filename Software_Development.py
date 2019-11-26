@@ -59,20 +59,13 @@ except:
 print()
 #------------------------------------------------------------------------------------------------------
 #Question2
-#Check the given value is n
-try:
-    n=int(input("Enter nth Fibbinoci number "))
-#Recursive function to find the fibbinoci number
-    def Fibbinoci(n):
-        if n<1:
-            return None
-        if n<3:
-            return 1
-        return Fibbinoci(n-1)+Fibbinoci(n-2)
-    print(Fibbinoci(n))
-except ValueError:
-    print("Enter an integer")
-except:
-    print("Error occured")
+#Fibonacci with recursion
+def Fibonacci(n):
+    if n<=1:
+        return n
+    else:
+        return Fibonacci(n-1)+Fibonacci(n-2)
+n=int(input("n ")
+print(Fibonacci(n))
 
 
