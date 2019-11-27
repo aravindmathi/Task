@@ -59,13 +59,20 @@ except:
 print()
 #------------------------------------------------------------------------------------------------------
 #Question2
-#Fibonacci with recursion
-def Fibonacci(n):
-    if n<=1:
-        return n
-    else:
-        return Fibonacci(n-1)+Fibonacci(n-2)
-n=int(input("n ")
-print(Fibonacci(n))
+def Fib(n):
+    if n==1:
+        return 0
+    elif n==2 or n==3:
+        return 1
+    fir=sec=1
+    sum=0
+    for _ in range(4,n+1):
+        sum=fir+sec
+        fir,sec=sec,sum
+        #print(index,sum)
+    return sum
+
+n=int(input("n "))
+print(Fib(n))
 
 
