@@ -60,10 +60,10 @@ print()
 #------------------------------------------------------------------------------------------------------
 #Question2
 def Fib(n):
-    if n==1:
-        return 0
-    elif n==2:
-        return 1
+    if n<1:
+        return None
+    if n < 3:
+        return n-1
     fir,sec=0,1
     sum=0
     for _ in range(3,n+1):
