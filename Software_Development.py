@@ -62,14 +62,13 @@ print()
 def Fib(n):
     if n==1:
         return 0
-    elif n==2 or n==3:
+    elif n==2:
         return 1
-    fir=sec=1
+    fir,sec=0,1
     sum=0
-    for _ in range(4,n+1):
+    for _ in range(3,n+1):
         sum=fir+sec
-        fir,sec=sec,sum
-        #print(index,sum)
+        fir,sec=sec,sum        
     return sum
 
 n=int(input("n "))
